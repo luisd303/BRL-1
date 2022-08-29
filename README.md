@@ -57,8 +57,7 @@ for `df2` that indicates which entities of `df1` truly match the entities of `df
 The `BRL` function implements all the steps of the BRL methodology, and outputs a vector that indicates which rows of `df1` are linked to the rows of `df2`.
 ```r
 data(twoFiles)
-(Zhat <- BRL(df1, df2, flds=c("gname", "fname", "age", "occup"), 
- 				types=c("lv","lv","bi","bi")))
+(Zhat <- BRL(df1, df2, flds=c("gname", "fname", "age", "occup"), types=c("cosine","cosine","bi","bi"), breaks = c(0, 0.20, 0.50, 0.75)))
 n1 <- nrow(df1)
 ## the linked record pairs
 cbind( df1[Zhat[Zhat<=n1],], df2[Zhat<=n1,] )
