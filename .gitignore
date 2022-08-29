@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+src/*.o
+src/*.so
+src/*.dll
+.Rbuildignore
+BRL-1.Rproj
+src/BRL-init.o
+src/BRLGibbs.o
