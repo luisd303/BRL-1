@@ -8,7 +8,8 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    utils
+    utils,
+    stringdist
 RoxygenNote: 7.0.2
 URL: https://github.com/msadinle/BRL
 BugReports: https://github.com/msadinle/BRL/issues
